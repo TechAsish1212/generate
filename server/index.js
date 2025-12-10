@@ -24,7 +24,7 @@ app.post("/upload", upload.single("file"), async (req, res) => {
       return res.status(400).json({ message: "No file uploaded" });
 
     // Public URL
-    const fileUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+    const fileUrl = `https://generate-2oiw.onrender.com/${req.file.filename}`;
 
     // QR of link
     const qr = await QRCode.toDataURL(fileUrl);
