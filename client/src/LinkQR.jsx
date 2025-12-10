@@ -8,7 +8,7 @@ export default function LinkQR() {
   const generateQR = async () => {
     if (!link) return alert("Enter a link first");
 
-    const res = await axios.post("http://localhost:5000/generate-link-qr", {
+    const res = await axios.post("https://generate-2oiw.onrender.com/generate-link-qr", {
       link,
     });
 

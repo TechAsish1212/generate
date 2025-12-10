@@ -11,7 +11,7 @@ function UploadQR() {
     const form = new FormData();
     form.append("file", file);
 
-    const res = await axios.post("http://localhost:5000/upload", form);
+    const res = await axios.post("https://generate-2oiw.onrender.com/upload", form);
     setQr(res.data.qr);
   };
 
